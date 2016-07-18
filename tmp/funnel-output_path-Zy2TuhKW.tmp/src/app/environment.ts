@@ -1,0 +1,1 @@
+/Users/soichit/Documents/angularfire2-list1/tmp/funnel-input_base_path-BsBpUlmE.tmp/0/environment.dev.ts

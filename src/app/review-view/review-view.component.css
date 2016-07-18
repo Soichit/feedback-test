@@ -1,0 +1,25 @@
+.add-review md-radio-group {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.add-review md-input {
+  width: 100%;
+}
+
+.review-rating {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+
+}
+
+.add-review {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.review {
+  width: 80%;
+  margin: 5px auto;
+}

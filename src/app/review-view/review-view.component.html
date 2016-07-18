@@ -1,0 +1,32 @@
+<md-card class="add-review">
+  <md-card-title>
+    Leave a Review
+  </md-card-title>
+    <div class="review-rating">
+      <md-radio-group [(ngModel)]="myReview.score">
+        <md-radio-button *ngFor="let option of options" [value]=option.score [checked]="option.enabled">
+        {{option.score}}
+        </md-radio-button>
+      </md-radio-group>
+    </div>
+    <md-input placeholder="Comment (Optional)" dividerColor="accent" [(ngModel)]="myReview.comment"></md-input>
+    <button md-raised-button (click)="submitReview()" color="primary">Submit</button>
+</md-card>
+<md-card>
+  <md-card-title>
+    Reviews
+  </md-card-title>
+  <md-card *ngFor="let review of reviews | async" class="review">
+    <md-radio-group [(ngModel)]="review.score" [ngModelOptions]="{standalone: true}" disabled>
+      <md-radio-button *ngFor="let option of options" [value]=option.score [checked]="option.enabled">
+      {{option.score}}
+      </md-radio-button>
+    </md-radio-group>
+    <span style="float: right">by {{review.author}}</span>
+    <blockquote>
+      <md-card-title>
+      {{review.comment}}
+      </md-card-title>
+    </blockquote>
+  </md-card>
+</md-card>
