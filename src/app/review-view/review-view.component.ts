@@ -18,7 +18,7 @@ import {ConsumerFirebaseDataService} from "../consumer-firebase-data.service";
     MdCard, MdCardHeader, MdCardTitleGroup, MD_CARD_DIRECTIVES,
     MdRadioButton, MdRadioGroup
   ],
-  providers: [ MdUniqueSelectionDispatcher ]
+  providers: [MdUniqueSelectionDispatcher, ConsumerFirebaseDataService]
 })
 export class ReviewViewComponent implements OnInit {
   reviews: FirebaseListObservable<any>;
