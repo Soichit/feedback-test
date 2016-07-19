@@ -4,7 +4,8 @@ import { MdButton } from '@angular2-material/button';
 import { MdCard, MdCardHeader, MdCardTitleGroup, MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdRadioButton, MdRadioGroup, MdUniqueSelectionDispatcher } from '@angular2-material/radio';
 import { FirebaseListObservable, AngularFire } from 'angularfire2';
-import { ConsumerFirebaseDataService } from '../../consumer-firebase-data.service';
+import {ConsumerFirebaseDataService} from "../consumer-firebase-data.service";
+
 
 @Component({
   moduleId: module.id,

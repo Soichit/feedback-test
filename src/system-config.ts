@@ -8,7 +8,8 @@
 /** Map relative paths to URLs. */
 const map: any = {
   'firebase': 'vendor/firebase/firebase.js',
-  'angularfire2': 'vendor/angularfire2'
+  'angularfire2': 'vendor/angularfire2',
+  '@angular2-material': 'vendor/@angular2-material'
 };
 
 /** User packages configuration. */
@@ -18,6 +19,33 @@ const packages: any = {
     main: 'angularfire2.js'
   }
 };
+
+// material design packages
+const materialPkgs:string[] = [
+  'core',
+  'input',
+  'button',
+  'radio',
+  'card',
+  'icon',
+  'list',
+  'toolbar',
+  'checkbox',
+  'grid-list',
+  'progress-bar',
+  'progress-circle',
+  'sidenav',
+  'slide-toggle',
+  'tabs'
+];
+
+materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: `${pkg}.js`
+  };
+});
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

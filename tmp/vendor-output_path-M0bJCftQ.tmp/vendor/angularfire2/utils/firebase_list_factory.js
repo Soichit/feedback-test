@@ -1,0 +1,1 @@
+/Users/soichit/Documents/feedback-test/tmp/vendor-input_base_path-VU61FfQv.tmp/0/angularfire2/utils/firebase_list_factory.js

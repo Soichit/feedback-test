@@ -1,0 +1,1 @@
+/Users/soichit/Documents/feedback-test/tmp/vendor-input_base_path-VU61FfQv.tmp/0/angularfire2/providers/firebase_sdk_auth_backend.js
